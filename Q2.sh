@@ -49,7 +49,6 @@ while true; do
             fi
             if [ -z $number ]; then
                 if [ -n "$TRY_NUMBER" ]; then
-                    echo "number : $TRY_NUMBER"
                     number=$TRY_NUMBER
                 else
                     number=$default_number
@@ -57,7 +56,6 @@ while true; do
             fi
             if [ -z $interval ]; then
                 if [ -n "$TRY_INTERVAL" ]; then
-                    echo "interval : $TRY_INTERVAL"
                     interval=$TRY_INTERVAL
                 else
                     interval=$default_interval
